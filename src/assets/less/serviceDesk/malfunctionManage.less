@@ -1,0 +1,123 @@
+//故障管理
+.malfunction-manage{
+    .search-conditions{
+        padding-top:20px;
+        >.el-form-item{
+            margin-right:60px;
+            .el-input__inner{
+                width:202px;
+            }
+        }
+        .time{
+            .el-input__inner{
+                width:400px;
+            }
+            .el-date-editor .el-range-separator{
+                line-height: 1;
+            }
+            .el-date-editor .el-range__close-icon,.el-date-editor .el-range__icon{
+                line-height: 1;
+            }
+        }
+    }
+    .el-table{
+        .el-radio__label{
+            display: none;
+        }
+    }
+}
+//创建工单
+.create-order{
+    .tabs-panel-wrap{
+        padding:40px 0px 90px 78px;
+        .el-form{
+            .el-input__inner{
+                width:202px;
+            }
+            .container{
+                display: inline-block;padding:20px 50px 15px 0px;
+                &.hasBg{
+                    background:#fafafa;
+                }
+            }
+        }
+    }
+}
+//填写表单
+.fill-form{
+    .el-collapse{
+        .el-form{
+            padding-top:30px;padding-bottom:15px;overflow: hidden;
+        }
+         .el-form-item {
+             float:left;   
+            &.custom-field-class-big {
+                height:28px;width:100%;
+                input {
+                    width: 800px !important;
+                }
+            }
+            &.custom-field-class-domain {
+                width:100%;
+                textarea {
+                    width: 800px !important;
+                    height: 100px;
+                }
+            }
+            &.custom-field-class-dropDown-radio{
+                height:28px;           
+            }
+            &.custom-field-class-number{
+                height:28px;           
+            }
+            &.custom-field-class-dropDown-checkbox{
+                min-height:28px;
+            }
+            &.custom-field-class-small{
+                height:28px;
+            }
+            &.custom-field-class-tree{
+                 height:28px;
+            }
+            &.custom-field-class-times{
+                 height:28px;
+                .el-input__inner{
+                    width:400px;
+                }
+                .el-date-editor .el-range-separator{
+                    line-height: 1;
+                }
+                .el-date-editor .el-range__close-icon,.el-date-editor .el-range__icon{
+                    line-height: 1;
+                }
+            }
+            &.custom-field-class-time{
+                 height:28px;
+                 .el-date-editor.el-input{
+                     width:234px;
+                 }
+                 .el-input__icon{
+                     line-height: 1;font-size: 14px;
+                 }
+                 .el-input__prefix{
+                     left:210px;
+                 }
+                 .el-input__suffix{
+                     right:16px;
+                 }
+            }
+         }             
+    }
+     .tabs-panel-wrap{
+        margin-top:10px;
+        .bottom{
+            padding:30px 10px 55px;
+            .el-input__inner {
+                width: 234px; height: 27px;
+            }
+            .el-button{
+                width:70px;
+            } 
+        }
+    }
+}

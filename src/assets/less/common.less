@@ -1,0 +1,548 @@
+//默认样式
+.resetWidth { width: 202px; }
+.tabs-left{
+    background-color: #ffffff;
+}
+.el-span{
+    width:234px;display:inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+    &.el-text{
+        width: inherit;
+    }
+}
+// 表格顶部信息框
+.message-headr {
+    padding-left: 10px;border-bottom: 1px solid #e4e4e4;line-height: 41px;background-color: #fafafa;
+}
+.message-content {
+    padding: 35px 40px;height: 153px;background-color: #ffffff;
+    .message-item {
+        line-height: 42px;height: 42px;
+        >.resetWidth {
+            width: 65%;
+        }
+    }
+}
+//表格顶部查询框
+.search-content{
+    .search-conditions {
+        padding: 25px 0 0 0px;
+        .el-form-item {
+            margin-bottom: 20px;margin-right:45px;
+            .el-input__inner {
+                width:202px;
+                &.date-picker{
+                    width: 400px;
+                    .el-input__icon.el-range__icon{
+                        line-height: 1;
+                    }
+                    .el-range-separator{
+                        line-height: 1;
+                    }
+                    .el-input__icon.el-range__close-icon{
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+    }
+}
+// 导入弹框
+.import-dialog-style {
+    width: 420px; height: 320px;
+    .content {
+        padding: 100px 0 0 20px;
+    }
+    .el-dialog__body {
+        height: 220px;
+    }
+}
+
+.audit-remark {
+    padding-top: 50px; height: 250px;
+    .el-textarea__inner {
+        height: 100px;
+    }
+}
+
+/********** 表格弹框样式 **********/
+.table-dialog{
+    width: 800px;
+    .table-dialog-content{
+        padding: 20px 10px 10px 10px;
+        &.store-room-dialog{
+            height: 600px;
+        }
+        .el-form{
+            margin-top: 20px;
+            .el-form-item{
+                margin-bottom: 20px;margin-right: 30px;
+            }
+        }
+        .el-table{
+            .el-table__row{
+                .el-radio__label{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+// 工单头部/创建工单头部
+.order-head-form{
+    padding:40px 0px 90px 78px;
+    .el-form{
+        .el-input__inner{
+            width:202px;
+        }
+        .container{
+            display: inline-block;padding:20px 50px 15px 0px;
+            &.hasBg{
+                background:#fafafa;
+            }
+        }
+    }
+}
+
+
+// 工单详情顶部
+.order-item{
+    padding: 12px 0; line-height: 14px; height:44px;min-width: 300px;float: left;
+    .w120{
+        width: 120px;
+    }
+    label{
+        width: 70px;display: inline-block;text-align: right;
+    }
+}
+
+
+/*====================暂时放置于此=====================*/
+/*
+*系统配置相关样式
+*/
+//分类新增编辑弹框
+.categoryDialogStyle .el-dialog__body{
+    width: 394px;height:325px;padding-top: 20px;padding-bottom: 10px;
+    .icon-select{
+        width:140px;left: 59px;
+        .el-input__inner{
+            height:27px!important;padding-right: 25px;
+        }
+    }
+    .icon-shwo{
+        position: absolute;left: 0px;top: -12px;width: 49px;height: 49px;border: 1px solid #c8c8c8;float: left;margin-right: 10px;padding:6px;
+        i{
+            position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%);
+        }
+    }
+}
+.menuDialogStyle .el-dialog__body{
+    width: 435px;height:445px;padding-top: 20px;padding-bottom: 10px;
+    .icon-select{
+        width:140px;left: 59px;
+        .el-input__inner{
+            height:27px!important;padding-right: 25px;
+        }
+    }
+    .parent-menu .el-form-item__content{
+        width: 200px;text-align: center;
+    }
+    .menu-type .el-radio+.el-radio{
+        margin-left: 5px;
+    }
+    .menu-operate{
+        height: 54px;
+        .el-form-item__content{
+           width: 195px; 
+           .el-checkbox{
+                line-height: 27px;
+            }
+            .el-checkbox:nth-child(odd){
+                margin-left: 0!important;
+            }
+            .el-checkbox:nth-child(even){
+                margin-left: 40px!important;
+            }
+        }
+    }
+}
+// 区域新增编辑弹框
+.areaDialogStyle .el-dialog__body{
+    width: 422px;padding: 35px 0;
+}
+// 所属区域
+.subordinateAreaDialogStyle { 
+    width: 470px; height: 380px; 
+    .el-dialog__body { 
+        height: 280px;
+        .queryArea {
+            height: 280px; 
+        }
+    }
+}
+// 工单关闭/挂起
+.orderCloseDialog, .orderHandupDialog{
+    width: 460px;height: 390px;
+    .el-dialog__body {
+        height: 287px;padding: 30px;
+        .el-form-item{
+            margin-bottom: 15px;
+            .el-radio+.el-radio{
+                margin-left: 43px;
+            }
+            .el-textarea{
+                width: 200px;
+            }
+        }
+        
+    }
+}
+// 工单指派
+.orderAssignDialog{
+    width: 562px;height: 527px;
+    .el-dialog__body {
+        width: 540px;height: 428px;padding: 40px 40px 30px 40px;
+    }
+    .el-form-item{
+        margin-bottom: 15px;
+        .el-radio+.el-radio{
+            margin-left: 43px;
+        }
+        .el-textarea{
+            width: 200px;
+        }
+    }
+}
+// 工单转回
+.orderBackDialog{
+    width: 776px;height: 387px;
+    .el-dialog__body {
+        position: relative;width: 756px;height: 287px;padding: 25px 0 45px 30px;
+    }
+    .el-form-item{
+        margin-bottom: 10px;
+        .el-radio+.el-radio{
+            margin-left: 43px;
+        }
+        &.back-textarea{
+            position: absolute;right: 40px;top: 65px;
+        }
+        .el-textarea{
+            width: 200px;
+        }
+    }
+}
+.toAssertDialog{
+    width: 562px;height: 527px;
+    .el-dialog__body {
+        width: 540px;height: 428px;padding: 40px 40px 30px 40px;
+    }
+    .el-form-item{
+        margin-bottom: 15px;
+        .el-form-item__content{
+            width: 200px;
+        }
+        .el-radio+.el-radio{
+            margin-left: 43px;
+        }
+        .el-textarea{
+            width: 200px;
+        }
+    }
+}
+.contentAddDialog{
+    width: 562px;height: 387px;
+    .el-dialog__body {
+        position: relative;width: 542px;height: 287px;padding: 55px;
+    }
+    .el-form-item{
+        margin-bottom: 10px;
+        .el-form-item__label{
+            margin-bottom: 10px;display: block;float: none;
+        }
+        .el-form-item__content{
+            margin-left: 66px!important;margin-top: 10px;
+            .el-textarea{
+                width: 300px;
+            }
+        }
+    }
+}
+.orderComplainDialog{
+    width: 562px;height: 387px;
+    .el-dialog__body {
+        position: relative;width: 542px;height: 287px;padding: 55px;
+    }
+    .el-form-item{
+        margin-bottom: 10px;
+        .el-textarea{
+            width: 200px;
+        }
+    }
+}
+
+
+// 过程步骤条
+.progress-component{
+    position: relative;width:100%;height: 221px;padding:35px 100px 0 100px;
+    .progress-box{
+        width:100%;overflow: hidden;
+        .step-box{
+            position: relative;width: 167px;display: inline-block;margin-bottom: 40px;
+            .step-content{
+                position: relative;width:80px;height:80px;margin:10px 40px;border-radius: 50%;cursor: pointer;
+                .step-title{
+                    position: absolute;left: 50%;top: 48%;transform: translate(-50%,-50%);-ms-transform:translate(-50%, -50%); color: #ffffff;font-size: 16px;
+                }
+                .before-line::before, .before-line::after{
+                    content:'';display:inline-block;height: 0px;width: 43px;border-bottom: 1px dashed #eee;
+                }
+                .before-line::before{
+                    position: absolute;left: -50px;top: 36px;
+                }
+                .before-line::after{
+                    position: absolute;left: -47px;top: 37px;
+                }
+                .after-line::before, .after-line::after{
+                    content:'';display:inline-block;height: 0px;width: 43px;border-bottom: 1px dashed #eee;
+                }
+                .after-line::before{
+                    position: absolute;left: 77px;top: 36px;
+                }
+                .after-line::after{
+                    position: absolute;left: 80px;top: 37px;
+                }
+            }
+            .complain-box{
+                position: absolute;left: 90px;top: 57px;background-color: #ffffff;width: 125px;height: 103px;border: 1px solid #d0d0d0;z-index: 999;padding: 10px 10px;
+                .complain-description{
+                    margin: 4px 0;text-align: center;
+                }
+                .complain-btn{
+                    margin-left: 25px;
+                }
+            }
+            .step-description{
+                width: 100%;text-align: center;
+            }
+        }
+    }
+    .arrow-left, .arrow-right{
+        width:35px;height:40px;border:1px solid #b8b8b8;position: absolute;top: 80px;transform: translateY(-20%);line-height: 40px;text-align: center;font-size: 24px;cursor: pointer;
+    }
+    .arrow-left{
+        left: 5px;
+    }
+    .arrow-right{
+        right: 5px;
+    }
+}
+
+// 流程制作
+.processSteps {
+    position:relative;
+    .arrow-left, 
+    .arrow-right {
+        width:35px;height:40px;border:1px solid #b8b8b8;position: absolute;top: 80px;transform: translateY(-20%);line-height: 40px;text-align: center;font-size: 24px;cursor: pointer;
+        i{
+            color:#b8b8b8;
+        }
+    }
+    .arrow-left{
+        left: 5px;
+    }
+    .arrow-right{
+        right: 5px;
+    }
+    .disabled-arrow-left,
+    .disabled-arrow-right {
+        border:1px solid #eee;
+        i{
+            color:#eee;
+        }
+    }
+    .steps-container {
+        width: 100%; padding: 50px 100px 30px 100px; text-align: center;
+        .steps-content{
+            overflow:hidden; position:relative; height:80px;
+        }
+        .steps-box{
+            position: relative; display:inline-block;
+            &::before{
+                position:absolute; top:40px; left:0; content:''; width:100%; border-top:2px solid #eee; 
+            }
+        }
+        
+        //流程节点的循环颜色     
+        .step-item.item-color0 {
+            background-color:#25a4ff;
+            border:4px solid #d3edff;
+        }
+        .step-item.item-color1 {
+            background-color:#2ac0f8;
+            border:4px solid #d4f2fe;
+        }
+        .step-item.item-color2 {
+            background-color:#6088ff;
+            border:4px solid #dfe7ff;
+        }
+        .step-item.item-color3 {
+            background-color:#9d91f8;
+            border:4px solid #ebe9fe;
+        }
+        .step-item.item-color4 {
+            background-color:#dc91f8;
+            border:4px solid #f8e9fe;
+        }
+        
+        .step-item{
+            position:relative; float:left; margin:0 25px; width:80px; height:80px; border-radius:50%; background-color:rgb(42, 192, 248);
+//          border:4px solid rgb(212, 242, 254);
+            .el-icon-my-tabDelete{
+                position: absolute; top:0; right:0; z-index:1; border-radius:50%; font-size:20px; color:#c8c8c8; background-color:#fff; display:none;
+            }
+            &:hover{
+                .el-icon-my-tabDelete{
+                    display:block;
+                }
+            }
+            .step-text {
+                position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%); -ms-transform: translate(-50%, -50%); width:80%; text-align:center;color: #ffffff;font-size: 15px;
+            }
+            &.start {
+                margin-left:0; width:0; height:0; border-radius:0; border:40px solid transparent; border-left:60px solid rgba(37, 164, 255, 0.2); border-right-width:0; 
+                background-color:transparent;
+                &::before{
+                    content:''; margin-left:0; width:0; height:0; border-radius:0; border:35px solid transparent; border-left:52px solid #25a4ff; border-right-width:0; 
+                    background-color:transparent; position:absolute; top:-35px; left:-57px;
+                }
+                .step-text{
+                     position: absolute;left:-60px;top: 50%;transform: translate(0,-50%);-ms-transform: translate(0, -50%);width:45px; text-align:center;color: #ffffff;font-size: 15px;
+                }
+            }
+            &.end {
+                margin-right:0; width:66px; height:66px; border-radius:8px; background-color:#a8c9e1; top:7px; border:4px solid #e9ebec;
+            }
+        }
+        .add-item {
+            position:relative; top:27px; float:left; width:28px; height:28px; border-radius:4px; border:1px solid #d7d7d7; background-color:#fff; 
+            &::after{
+                position:absolute; left:5px; right:5px; top:12px; content:''; border-top:2px solid #d7d7d7;
+            }
+            &::before{
+                position:absolute; top:5px; bottom:5px; left:12px; content:''; border-left:2px solid #d7d7d7;
+            }
+        }
+    }
+}
+
+
+
+
+.buildDialogStyle { 
+    width: 415px; height: 380px; 
+    .el-dialog__body { height: 280px;padding-top: 30px; }
+    .resetStyle { width: 200px; height: 32px; line-height: 27px; }
+    .user .el-form-item__content { width: 535px; }
+}
+.machineDialogStyle { 
+    width: 767px; height: 370px;
+    .el-dialog__body{ 
+        height: 270px;padding-top: 35px; 
+    } 
+    .resetStyle { 
+        width: 200px; height: 32px; line-height: 27px; 
+    }
+    .user .el-form-item__content { 
+        width: 535px; 
+    }
+}
+
+
+//服务等级uc
+.uc-save-page {
+    .reset-width { 
+        width: 230px;
+    }
+    .body { 
+        padding-top: 30px; padding-bottom: 40px; 
+    }
+    .el-form-item__label { 
+        width: 150px; 
+    }
+    .el-input__prefix { 
+        left: 200px; 
+    }
+    .el-icon-date {
+        &:before { 
+            content: "\E642"; 
+        }
+    }
+    .el-input--prefix {
+        .el-input__inner { 
+            padding-left: 10px; 
+        }
+    }
+    .reset-end-time {
+        .el-form-item__label{ width: 33px; text-align: left; }
+        .el-form-item__label {
+            &:before { 
+                content: ""; 
+            }
+        }
+    }
+    .content { 
+        height: 140px; line-height: 110px; position: relative; margin-left: 60px; 
+    }
+    .el-upload.el-upload--picture { 
+        position: absolute; left: 290px; 
+    }
+    .el-upload-list.el-upload-list--picture { 
+        width: 60%; position: absolute; top: 10px; left: 470px; 
+    }
+    .el-upload-list--picture {
+        .el-upload-list__item { 
+            overflow:visible;width: 70px; float: left; margin-left: 40px; padding-right: 0; 
+            &:after {
+                content: ".";
+                display: block;
+                clear: both;
+                visibility: hidden;
+                line-height: 0;
+                height: 0;
+                font-size: 0;
+            }
+            *zoom: 1;
+            .el-upload-list__item-name{
+                position: absolute;top: 90px;left: 0px;line-height: 24px;width: 90px;margin-right: 0;margin-top: 0px;z-index: 9999;
+                i{
+                    display: none;
+                }
+            }
+        }
+    }
+    .el-upload-list__item {
+        &.is-success{
+            .el-upload-list__item-status-label { 
+                display: none; 
+            }
+            .el-upload-list__item-name{
+                position: absolute;top: 90px;left: 0px;line-height: 24px;width: 90px;margin-right: 0;margin-top: 0px;z-index: 9999;
+                i{
+                    display: none;
+                }
+            }
+        }
+        .el-icon-close { 
+            z-index: 9999; right: 0; top: 70px; width: 100%; height: 20px; line-height: 20px; text-align: center; color: white; background-color:rgba(0,0,0,0.6); 
+        }
+        .el-icon-close {
+            &:before { 
+                content: "\E612"; 
+            }
+        }
+    }
+}
+

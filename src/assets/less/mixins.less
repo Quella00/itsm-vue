@@ -1,0 +1,40 @@
+//清除浮动
+.clearfix() {
+    &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+        font-size: 0;
+    }
+    *zoom: 1;
+}
+
+//透明度
+.opa(@opacity: 50) {
+  opacity: @opacity / 100;
+  filter: ~"alpha(opacity=@{opacity})";
+}
+
+//单行文字，多了显示省略
+.ellipsis(){
+    overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+//单行文本，多了也显示
+.noEllipsis(){
+    overflow: inherit;text-overflow: inherit;white-space: inherit;
+}
+//多行文本超出显示省略号
+.ellipsisMore(@lineNum:1){
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: @lineNum;
+    -webkit-box-orient: vertical;
+}
+
+
+
+

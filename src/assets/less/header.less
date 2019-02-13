@@ -1,0 +1,70 @@
+.header{
+    height:60px;background-color:#0d7fdf;position: relative;
+    .header-left{
+        height:60px;position: absolute;top:0;left:0;width:220px;
+        .logo{
+            margin:17px 0px 0px 20px;display: block;
+            img{
+                display: inline-block;width:173px;height:25px;
+            }
+        }
+        &:after{
+            position: absolute;right: 0;top:16px;content: "";height:35px;width: 1px;background: linear-gradient(transparent 0%, #4e9bf4 40%, #4e9bf4 60%, transparent 100%);
+        }
+       
+    }
+   .header-title{
+        margin-left:220px;width:235px;height:60px;
+        img{
+            display: inline-block;width:211px;height:17px;margin-top:21px;margin-left:18px;  
+        }               
+    }
+    .header-right{
+//     height:60px;
+        position: absolute;right: 0;top:0;line-height: 60px;
+        ul{
+            margin-right:40px;height:100%;
+            li{
+                float:left;
+                margin-left:16px;
+                a{
+                    display:inline-block;
+                }
+                .el-icon-my-message {
+                    position:relative; top:5px; font-size:26px; color:#e1ebfb;
+                    span{
+                        position: absolute; top:-2px; left: 15px; padding: 0 5px 0 5px; height:15px; border-radius:10px; font-size:9px; line-height:15px; text-align:center; background-color:#f34f4b;
+                    }
+                }
+                .el-icon-my-help {
+                    position:relative; top:5px; font-size:24px; color:#e1ebfb;
+                }
+                .el-dropdown{
+                    font-size:14px; color: #fff;
+                    .el-dropdown-link {
+                        cursor: pointer;
+                        span {
+                            display:inline-block; margin-right:4px;
+                        }
+                        img {
+                            position:relative; top:10px; display:inline-block; width:32px; height:32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 用户中心下拉菜单
+.header-dropdown-menu {
+    .el-dropdown-menu__item{
+        padding:0;
+        a{
+            display:inline-block;padding:0 30px; font-size:12px; color:#7c8694;
+        }
+        &:hover a{
+            color:#0d7fdf;
+        }
+    }
+}

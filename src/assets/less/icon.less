@@ -1,0 +1,366 @@
+//上下左右小箭头
+.icon-arrow{
+    display: inline-block;background-image:url(../img/arrow-group.png);
+    &.arrow-to-bottom{
+        width:11px;height:6px;background-position: 0px 0px;
+    }
+    &.arrow-to-top{
+        width:11px;height:6px;background-position: -6px 0px;
+    }
+    &.arrow-to-left{
+        width:6px;height:11px;background-position: -12px 0px;
+    }
+    &.arrow-to-right{
+        width:6px;height:11px;background-position: -23px 0px;
+    }
+}
+//input带的更多图标
+.el-form-item .el-icon-my-more{
+    position: absolute;right:4px;top:4px;cursor: pointer;text-align: right;font-size:20px;color:#8ea8bd;
+//  position: absolute;right:-2px;top:3px;cursor: pointer; width:21px; height:21px; line-height:21px; font-size:21px; color:#8ea8bd;
+}
+//table中的操作图标
+.el-table {
+    i[class^='el-icon-my']{
+         font-size: 20px;color:#57a9fd;
+    }
+    .el-button{
+        i[class^='el-icon-my']{
+             font-size: 16px;color:#fff;
+        } 
+    }
+}
+//elementui折叠面板
+.el-collapse {
+    .el-icon-my-contraction{
+        font-size: 12px;color: #a1a1a1;
+    }
+    .el-collapse-item{
+        .el-icon-my-contraction{
+            margin-left:10px;
+            transition:transform 0.3s;
+            -moz-transition:transform 0.3s; /* Firefox 4 */
+            -webkit-transition: transform 0.3s; /* Safari 和 Chrome */
+            -o-transition: transform 0.3s; /* Opera */
+        }
+        &.is-active{
+           .el-icon-my-contraction{
+                transform: rotate(180deg);
+                -ms-transform:rotate(180deg);     /* IE 9 */
+                -moz-transform:rotate(180deg);    /* Firefox */
+                -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+                -o-transform:rotate(180deg);  /* Opera */
+           }
+        }
+    }
+    .el-collapse-item__arrow{
+        display: none;
+    }
+}
+
+//快捷方式管理图标汇总
+.shortcut{
+    display: inline-block;width:100%;height:100%;border-radius:50%;background-image:url(../img/shortcut.png);background-repeat: no-repeat;
+    
+    ////////////////////////系统管理
+    //分类管理
+    &.icon-flgl{
+        background-color: #8cd12a;background-position: -4px -2px;
+    }
+    //区域管理
+    &.icon-qygl{
+        background-color: #30c5cb;background-position: -58px -2px;
+    }
+    //建筑管理
+    &.icon-jzgl{
+        background-color: #1acaf9;background-position: -112px -2px;
+    }
+    //机房管理
+    &.icon-jfgl{
+        background-color: #8cd12a;background-position: -164px -1px;
+    }
+    //机柜管理
+    &.icon-jggl{
+        background-color: #8298fa;background-position: -219px -1px;
+    }
+    //库房管理
+    &.icon-kfgl{
+        background-color: #ffcb41;background-position: -272px -2px;
+    }
+    //短信发送配置
+    &.icon-dxfspz{
+        background-color: #b58cf2;background-position: -4px -47px;
+    }
+    //邮件发送配置
+    &.icon-yjfspz{
+        background-color: #8cd12a;background-position: -58px -47px;
+    }
+    //账户系统同步配置
+    &.icon-zhxttbpz{
+        background-color: #43a6fb;background-position: -112px -50px;
+    }
+    //资产监控配置
+    &.icon-zcjkpz{
+        background-color: #8298fa;background-position: -166px -49px;
+    }
+    //组织管理
+    &.icon-zzgl{
+        background-color: #1acaf9;background-position: -220px -50px;
+    }
+    //运维组管理
+    &.icon-ywzgl{
+        background-color: #8298fa;background-position: -272px -48px;
+    }
+    //技能管理
+    &.icon-jngl{
+        background-color: #43a6fb;background-position: -4px -97px;
+    }
+    //角色管理
+    &.icon-jsgl{
+        background-color: #25a5da;background-position: -58px -97px;
+    }
+    //人员管理
+    &.icon-rygl{
+        background-color: #8cd12a;background-position: -111px -95px;
+    }
+    //在线人员管理
+    &.icon-zxrygl{
+        background-color: #30c5cb;background-position: -166px -95px;
+    }
+    //审计日志
+    &.icon-sjrz{
+        background-color: #8298fa;background-position: -217px -95px;
+    }
+    //系统日志
+    &.icon-xtrz{
+        background-color: #b58cf2;background-position: -272px -95px;
+    }
+    //外部用户
+    &.icon-wbyh{
+        background-color: #8298fa;background-position: -4px -141px;
+    }
+    //公告管理
+    &.icon-gggl{
+        background-color: #f4b733;background-position: -58px -142px;
+    }
+    //快捷访问管理
+    &.icon-kjfwgl{
+        background-color: #ff7b54;background-position: -113px -140px;
+    }
+    
+    ////////////////////////资产管理
+    //资产管理
+     &.icon-zcgx{
+        background-color: #8298fa;background-position: -4px -191px;
+    }
+    //资产关系
+     &.icon-zcgl{
+        background-color: #b58cf2;background-position: -57px -190px;
+    }
+    //资产审核
+     &.icon-zcsh{
+        background-color: #8cd12a;background-position: -112px -190px;
+    }
+    //资产应用
+     &.icon-zcyy{
+        background-color: #f4b733;background-position: -166px -191px;
+    }
+    
+    ////////////////////////服务等级管理
+    &.icon-slagl{
+        background-color: #30c5cb;background-position: -4px -235px;
+    }
+    &.icon-zchtgl{
+        background-color: #43a6fb;background-position: -57px -235px;
+    }
+    &.icon-htxygl{
+        background-color: #8298fa;background-position: -112px -235px;
+    }
+    
+    ////////////////////////流程管理
+    //事件流程管理
+    &.icon-sjlcgl{
+        background-color: #8298fa;background-position: -4px -281px;
+    }
+    //问题流程管理
+    &.icon-wtlcgl{
+        background-color: #ff7b54;background-position: -58px -281px;
+    }
+    //变更流程管理
+    &.icon-bglcgl{
+        background-color: #30c5cb;background-position: -112px -281px;
+    }
+    //发布流程管理
+    &.icon-fblcgl{
+        background-color: #f4b733;background-position: -166px -281px;
+    }
+    //备件流程管理
+    &.icon-bjlcgl{
+        background-color: #906df9;background-position: -218px -282px;
+    }
+    //表单字段管理
+    &.icon-bdzdgl{
+        background-color: #30c5cb;background-position: -273px -281px;
+    }
+    //表单管理
+    &.icon-bdgl{
+        background-color: #ff7b54;background-position: -4px -327px;
+    }
+    
+    //////////////////////////服务台
+    //故障管理
+    &.icon-gzgl{
+        background-color: #f4b733;background-position: -5px -375px;
+    }
+    //创建事件工单
+    &.icon-cjsjgd{
+        background-color: #30c5cb;background-position: -57px -375px;
+    }
+    //创建问题工单
+    &.icon-cjwtgd{
+        background-color: #ff7b54;background-position: -112px -375px;
+    }
+    //创建变更工单
+    &.icon-cjbggd{
+        background-color: #43a6fb;background-position: -166px -375px;
+    }
+    //创建发布工单
+    &.icon-cjfbgd{
+        background-color: #30c5cb;background-position:-218px -375px;
+    }
+    //创建备件工单
+    &.icon-cjbjgd{
+        background-color: #8cd12a;background-position:-272px -375px;
+    }
+    //待回访工单
+    &.icon-dhfgd{
+        background-color: #8298fa;background-position: -5px -422px;
+    }  
+    //投诉管理
+    &.icon-tsgl{
+        background-color: #ff7b54;background-position: -57px -422px;
+    }
+    
+    //////////////////////////工单管理
+    //工单综合查询
+    &.icon-gdzhcx{
+        background-color: #43a6fb;background-position: -3px -465px;
+    }
+    //待办事件
+    &.icon-dbsj{
+        background-color: #ff9a41;background-position: -57px -465px;
+    }
+    //待办变更
+    &.icon-dbbg{
+        background-color: #30c5cb;background-position: -111px -465px;
+    }
+    //变更日历
+    &.icon-bgrl{
+        background-color: #906df9;background-position: -166px -465px;
+    }
+    //待办发布
+    &.icon-dbfb{
+        background-color: #f4b733;background-position: -218px -465px;
+    }
+    //待办备件
+    &.icon-dbbj{
+        background-color: #8298fa;background-position: -272px -464px;
+    }
+    //待办问题
+    &.icon-dbwt{
+        background-color: #ff7b54;background-position: -3px -508px;
+    }
+    //待办工单
+    &.icon-dbgd{
+        background-color: #43a6fb;background-position: -57px -508px;
+    }
+    
+    //////////////////////////备件管理
+    //备件管理
+    &.icon-gjgl{
+        background-color: #8cd12a;background-position: -3px -557px;
+    }
+    //备件审核
+    &.icon-bjsh{
+        background-color: #30c5cb;background-position: -57px -557px;
+    }
+    //入库管理
+    &.icon-rkgl{
+        background-color: #1acaf9;background-position: -111px -557px;
+    }
+    //出库管理
+    &.icon-ckgl{
+        background-color: #8cd12a;background-position: -166px -557px;
+    }
+    //备件应用
+    &.icon-bjyy{
+        background-color: #8298fa;background-position: -219px -557px;
+    }
+    
+    //////////////////////////知识库
+    //待转化知识
+    &.icon-dzhzs{
+        background-color: #8298fa;background-position: -5px -610px;
+    }
+    //知识管理
+    &.icon-zsgl{
+        background-color: #b58cf2;background-position: -57px -611px;
+    }
+    //知识审核
+    &.icon-zssh{
+        background-color: #8cd12a;background-position: -111px -611px;
+    }
+    //知识检索
+    &.icon-zsjs{
+        background-color: #ffcb41;background-position: -166px -611px;
+    }
+    
+    //////////////////////////绩效管理
+    //考核算法管理
+    &.icon-khsfgl{
+        background-color: #30c5cb;background-position: -3px -660px;
+    }
+    //运维组绩效报表
+    &.icon-ywzjxbb{
+        background-color: #43a6fb;background-position: -58px -660px;
+    }
+    //人员绩效报表
+    &.icon-ryjxbb{
+        background-color: #8298fa;background-position: -111px -660px;
+    }
+    
+    //////////////////////////报表管理
+    //工单综合报表
+    &.icon-gdzhbb{
+        background-color: #8298fa;background-position: -4px -716px;
+    }
+    //组织工单报表
+    &.icon-zzgdbb{
+        background-color: #ff7b54;background-position: -58px -716px;
+    }
+    //资产工单报表
+    &.icon-zcgdbb{
+        background-color: #30c5cb;background-position: -111px -716px;
+    }
+    //运维组工单报表
+    &.icon-ywzgdbb{
+        background-color: #f4b733;background-position: -166px -716px;
+    }
+    //响应工单报表
+    &.icon-xygdbb{
+        background-color: #906df9;background-position: -219px -716px;
+    }
+    //处理工单报表
+    &.icon-clgdbb{
+        background-color: #30c5cb;background-position: -272px -716px;
+    }
+    //满意度报表
+    &.icon-mydbb{
+        background-color: #ff7b54;background-position: -3px -773px;
+    }
+    //知识报表
+    &.icon-zsbb{
+        background-color: #30c5cb;background-position: -58px -773px;
+    }
+    
+}

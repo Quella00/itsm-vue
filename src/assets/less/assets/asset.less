@@ -1,0 +1,180 @@
+// 资产管理
+.asset-index {
+    // 查询部分
+    .asset-query {
+        .el-input__inner {
+            width: 200px;
+        }
+        .el-input--prefix .el-input__inner {
+            padding-left: 20px;
+        }
+    }
+    // 上传弹窗
+    .upload {
+        width: 415px; height: 315px;
+        .upload-content {
+            height: 215px; padding: 80px 20px 0px;
+        }
+        .input-box {
+            display: inline-block;
+            .el-input {
+                width: 193px;
+            }
+        }
+        .upload-btn {
+            display: inline-block;
+            button {
+                width: 80px;
+            }
+        }
+    }
+}
+
+// 版本信息
+.asset-table {
+    border-collapse: collapse; margin: 20px 20px 20px 20px;
+    td {
+        border: 1px solid #c8c8c8; width: 200px; height: 35px; line-height: 35px; text-align: center;
+    }
+}
+
+// 新增/编辑 资产备件
+.add-edit-asset, .add-edit-spare {
+    
+    // 基本信息里备注文本域
+    .basicinfo-remark-textarea {
+        textarea {
+            min-height: 68px !important;
+        }
+    }
+    
+    // tab页  表头
+    .tabs-nav-asset {
+        height: 40px; border-bottom: 1px solid #e4e4e4; padding: 0 20px 0;
+//      .el-tabs--card > .el-tabs__header .el-tabs__nav {
+//          margin-top: 11px;
+//      }
+        .el-tabs__item {
+            margin-right: 50px;
+            .tabs-item {
+                color: #666; background-color: #ffffff; font-weight: 300; height:28px; line-height: 28px;
+                span {
+                    max-width:150px;
+                }
+            }
+            &.is-active {
+                .tabs-item {
+                    background-color: #57a9fd;
+                    span {
+                        color: #ffffff;
+                    }
+                }
+            }
+            &:last-child{
+                margin-right:0px;
+            }
+        }
+    }
+    
+    // tab页  表格
+    .asset-tab {
+        .tabs-panel-wrap {
+            border: none;
+        }
+    }
+    
+    // 新增资产 保存按钮
+    .btn-index {
+        margin-top: 10px; margin-right: 15px; text-align: center;
+    }
+    
+    // form表单  日期
+    .date {
+        .el-form-item__content {
+            width: 234px;
+        }
+        .el-input__prefix {
+            left: 210px;
+        }
+        .el-input__icon {
+            line-height: 27px;
+        }
+    }
+    
+    // 供应商弹窗(有的默认勾选不能改)
+    .supplier-table {
+        .el-checkbox  {
+            &.is-disabled {
+                &.is-checked {
+                    .el-checkbox__inner {
+                        background-color: #e9f3f7; border-color: #e9f3f7;
+                    }
+                }
+            }
+        }
+    }
+    
+    // 合同信息弹窗
+    .contractInfo-dialog {
+        height: 440px; width: 430px;
+        .contractInfo-form {
+            height: 340px; padding-top: 30px;
+            .el-form-item__content, .el-input, .el-input__inner {
+               width: 200px;
+            }
+            .upload-btn {
+               text-align: center; margin-top: 30px;
+            }
+        }
+    }
+    
+    .add-maintenance-content {
+        .dialog-tabs {
+            height: 50px; border-bottom: 1px solid #e4e4e4; padding: 19px 0px 0px 35px;
+            ul {
+                li {
+                    float: left; height: 30px; line-height: 30px; padding: 0px 10px; text-align: center; position: relative; border-top-left-radius: 5px; border-top-right-radius: 5px;
+                    a {
+                        display: inline-block; height: 100%; width: 100%; color: #fff; color: #666;
+                    }
+                    &.active {
+                        background: #57a9fd;
+                        a {
+                            color: #fff;
+                        }
+                    }
+                    &+ li {
+                        margin-left: 35px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .associated-asset-dialog {
+        width: 770px; height: 415px;
+        .el-form--inline {
+            height: 318px; padding-top: 40px;
+            .el-form-item--small {
+                height: 40px;
+            }
+            .el-textarea__inner {
+                width: 470px; height: 115px;
+            }
+            .target-configuration-item {
+                .el-input, .el-input__inner, .el-input--small {
+                    width: 470px;
+                }
+            }
+            .relation .el-input--suffix {
+                width: 226px;
+            }
+        }
+    }
+    
+    .interfaces-info-dialog {
+        .describe .el-textarea__inner {
+            height: 50px; width: 548px;
+        }
+    }
+}

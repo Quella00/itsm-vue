@@ -1,0 +1,62 @@
+.tabs-nav {
+    position: relative; padding: 0 50px 0 235px;
+    
+    .el-tabs--card > .el-tabs__header {
+        border-bottom: none;
+    }
+    .el-tabs__header {
+        margin: 0; 
+    }
+    .el-tabs__nav-wrap {
+         margin-bottom: 0; 
+    }
+    .el-tabs--card > .el-tabs__header .el-tabs__nav {
+        margin-top:14px; border: none; border-radius: 0;
+    }
+    .el-tabs--card > .el-tabs__header .el-tabs__item {
+        border-bottom: none; border-left: none;
+    }
+    .el-tabs__item + .el-tabs__item {
+        margin-left: 13px;
+    }
+    
+    .el-tabs--top.el-tabs--card .el-tabs__item:nth-child(2) {
+        padding-left: 0; 
+    }
+    
+    .el-tabs__item {
+        /*float: left;*/
+        padding:0; height:25px; padding-right:7px;
+        .tabs-item{
+            position:relative; display:block; padding: 0 15px; font-size: 14px; color: #fff; height:25px; line-height: 27px; border-radius: 5px 5px 0 0;background-color: #c8c8c8;
+            span{
+                display:inline-block; max-width:100px; .ellipsis();
+            }
+            i {
+                position: absolute;top: -5px;right: -5px;font-size: 15px;color: #aaa;border-radius: 50%;background-color: #fff;cursor: pointer;
+                &:hover {
+                    color: #999;
+                }
+            }
+        }
+        &.is-active{
+            
+            .tabs-item{
+                background-color: #57a9fd;
+                i {
+                    color: #57a9fd;
+                }
+            }
+        }
+    }
+    
+    .el-tabs__nav-next, 
+    .el-tabs__nav-prev {
+        position: absolute;cursor: pointer; height:39px; line-height:50px;font-size: 14px;color: #878d99;
+    }
+    
+    .el-icon-my-tabDeleteAll{
+        position:absolute; top:10px; right:15px; font-size:18px; color:#c8c8c8; cursor:pointer;
+    }
+    
+}
